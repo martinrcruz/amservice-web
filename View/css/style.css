@@ -1,0 +1,112 @@
+/* HEADER SECTION*/
+section.header-bar {
+  background-color: #5784ba;
+  height: 50px;
+  padding: 5px 10px 5px 10px;
+  justify-content: right;
+  color: white;
+}
+
+/******************************************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+/* FORMULARIO-LOGIN */
+form.login-form {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 50px 0px 50px 0px;
+  margin: 60px 0px 0px 0px;
+  text-align: center;
+}
+/* FORMULARIO-LOGIN : LOGIN-IMG*/
+img.login-img {
+  width: 130px;
+  height: 130px;
+  margin: 10px 10px 30px 10px;
+}
+/* FORMULARIO-LOGIN : LOGIN-TEXT */
+label.login-text {
+  color: #52759e;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 20px;
+}
+
+/* FORMULARIO-LOGIN : LOGIN-FIELD */
+input.login-field {
+  border: none;
+  border-radius: 8px;
+  padding: 0px 10px 0px 10px;
+  background-color: #eaeaea;
+}
+
+/* FORMULARIO-LOGIN : REMEMBER-ME-BOX */
+input.remember-me-box {
+  margin-right: 5px;
+}
+/* FORMULARIO-LOGIN : REMEMBER-ME-TEXT */
+label.remember-me-text {
+  color: #5784ba;
+}
+
+/******************************************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+/* FORMULARIO-REGISTER */
+form.register-form {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 50px 0px 50px 0px;
+  margin: 60px 0px 0px 0px;
+  text-align: center;
+}
+/* FORMULARIO-REGISTER : REGISTER-IMG*/
+img.register-img {
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px 40px 0px;
+}
+/* FORMULARIO-REGISTER : REGISTER-TEXT */
+label.register-text {
+  color: #52759e;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* FORMULARIO-REGISTER : REGISTER-FIELD */
+input.register-field {
+  border: none;
+  border-radius: 8px;
+  padding: 0px 10px 0px 10px;
+  background-color: #eaeaea;
+}
+
+/* FORMULARIO-REGISTER : REMEMBER-ME-BOX */
+input.remember-me-box {
+  margin-right: 5px;
+}
+/* FORMULARIO-REGISTER : REMEMBER-ME-TEXT */
+label.remember-me-text {
+  color: #5784ba;
+}
+
+/******************************************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+/* COMPONENTES GLOBALES */
+/* BUTTON */
+.button {
+  border: none;
+  border-radius: 10px;
+  padding: 6px 10% 6px 10%;
+  background-color: #5784ba;
+  color: white;
+}
