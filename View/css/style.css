@@ -1,10 +1,12 @@
 /* HEADER SECTION*/
 section.header-bar {
-  background-color: #5784ba;
+  background-color: #52759e;
   height: 50px;
-  padding: 5px 10px 5px 10px;
+  width: 100%;
   justify-content: right;
   color: white;
+  position: fixed;
+  z-index: 99;
 }
 
 /******************************************/
@@ -95,6 +97,50 @@ input.remember-me-box {
 label.remember-me-text {
   color: #5784ba;
 }
+
+
+/* HOME : COMPONENT - CONTAINER*/
+section.home-component{
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  position: relative;
+  height: 200;
+  width: 100;
+  margin: 25px 0 10px 0;
+  padding:25px;
+}
+
+/* HOME : CONTAINER - 1 - chart.js - 1 */
+section.home-chart-1 {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  position: relative;
+  height: 200;
+  width: 100;
+  padding:25px;
+}
+
+/* HOME : CONTAINER - 2 - chart.js - 2  */
+section.home-chart-2 {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  position: relative;
+  height: 200;
+  width: 100;
+  padding:25px;
+
+}
+/* HOME : CONTAINER - 3 - chart.js - 3  */
+section.home-chart-3 {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 25px;
+  position: relative;
+  padding:25px;
+
+
+}
+
 
 /******************************************/
 /******************************************/
