@@ -13,52 +13,64 @@
     <title>Login - AMService web</title>
 </head>
 
-<body>
-    <!-- HEADER -->
+<body class="background-login-register">
+    <!-- HEADER
     <header class="container-fluid">
         <section class="row header-bar">
-            <h3>hamburguer</h3>
         </section>
 
-    </header>
+    </header> -->
 
 
     <!-- CUERPO -->
     <section class="container">
         <section class="row">
-            <div class="col-3"></div>
+            <div class="col-4"></div>
 
-            <div class="col-6">
+            <div class="col-4">
                 <!--Contenedor de formulario de login-->
-                <section class="container">
 
-                    <form action="/./View/navigation/home.html" class="login-form">
+                <form action="/./View/navigation/home.html" class="login-form">
+                    <img class="login-img" src="/./View/resources/images/header-amservice-logo-nobackground.png" alt=""
+                        srcset="">
 
-                        <img class="login-img" src="/./View/resources/images/LOGO AM Square.jpg" alt="" > <br>
+                    <br><br>
 
-                        <label class="login-text" for="username">email:</label><br>
-                        <input class="login-field" type="text" id="username-login" name="username-login" value="" /><br>
+                    <label class="login-text" for="username">Correo electronico:</label><br>
+                    <input class="login-field" type="text" id="username-login" name="username-login" value="" /><br>
 
-                        <label class="login-text" for="password">Contrasena:</label><br>
-                        <input class="login-field" type="password" id="password-login" name="password-login" value="" /><br><br>
+                    <label class="login-text" for="password">Contraseña:</label><br>
+                    <input class="login-field" type="password" id="password-login" name="password-login"
+                        value="" /><br><br>
 
-                        <input class="remember-me-box" type="checkbox" name="remember-me" id="remember-me"><label
-                            class="remember-me-text" for="password"> Recuerdame</label>
-                        <br>
-                        <br>
+                    <input class="remember-me-box" type="checkbox" name="remember-me" id="remember-me">
+                    <label class="remember-me-text" for="password"> Recuerdame</label>
+                    <br>
+                    <br>
 
-                        <input class="button" type="submit" value="Ingresar" />
-                    
-                        <!-- TO DO -->
-                        <!-- LINK DE DIRECCION AL FOMRULARIO DE REGISTRO -->
-                    </form>
+                    <input class="button" type="submit" value="Ingresar" />
 
 
-                </section>
+
+                    <!-- TO DO -->
+                    <!-- LINK DE DIRECCION AL FOMRULARIO DE REGISTRO -->
+
+                    <br><br><br>
+                    <img class="powered-img" src="/./View/resources/images/powered-by.png" alt="" srcset="">
+                </form>
+                
+
             </div>
-            <div class="col-3"></div>
+            <div class="col-4"></div>
         </section>
     </section>
+
+    <!-- FOOTER
+    <footer class="container-fluid">
+        <section class="row footer-bar">
+        </section>
+    </footer> -->
+
 </body>
 
 </html>

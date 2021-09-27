@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 /* HEADER SECTION*/
 section.header-bar {
   background-color: #52759e;
@@ -9,6 +11,31 @@ section.header-bar {
   z-index: 99;
 }
 
+/* FOOTER SECTION*/
+section.footer-bar {
+  background-color: #52759e;
+  height: 50px;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  justify-content: right;
+  color: white;
+  position: fixed;
+  z-index: 99;
+}
+
+/* FONDO CON GRADIENT : LOGIN/REGISTER */
+body.background-login-register {
+  background: radial-gradient(
+    circle at top left,
+    #fff,
+    rgb(171, 202, 231),
+    rgb(255, 255, 255)
+  ) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /******************************************/
 /******************************************/
 /******************************************/
@@ -16,38 +43,46 @@ section.header-bar {
 
 /* FORMULARIO-LOGIN */
 form.login-form {
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  padding: 50px 0px 50px 0px;
-  margin: 60px 0px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 0px 10px 0px;
+  margin: 80px 0px 0px 0px;
   text-align: center;
 }
 /* FORMULARIO-LOGIN : LOGIN-IMG*/
 img.login-img {
-  width: 130px;
-  height: 130px;
-  margin: 10px 10px 30px 10px;
+  width: 200px;
+  height: 100px;
+  margin: 0px 10px 0px 10px;
+}
+img.powered-img {
+  width: 100px;
+  height: 50px;
+  margin: 0px 0px 0px 0px;
 }
 /* FORMULARIO-LOGIN : LOGIN-TEXT */
 label.login-text {
   color: #52759e;
   font-size: 16px;
   font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 12px;
 }
 
 /* FORMULARIO-LOGIN : LOGIN-FIELD */
 input.login-field {
   border: none;
   border-radius: 8px;
-  padding: 0px 10px 0px 10px;
-  background-color: #eaeaea;
+  width: 75%;
+  padding: 4px 15px 4px 15px;
+  margin: 0px 0px 10px 0px;
+  background-color: rgb(243, 243, 243);
 }
 
 /* FORMULARIO-LOGIN : REMEMBER-ME-BOX */
 input.remember-me-box {
   margin-right: 5px;
+  display: inline-block;
 }
 /* FORMULARIO-LOGIN : REMEMBER-ME-TEXT */
 label.remember-me-text {
@@ -61,10 +96,10 @@ label.remember-me-text {
 
 /* FORMULARIO-REGISTER */
 form.register-form {
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  padding: 50px 0px 50px 0px;
-  margin: 60px 0px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px 80px 10px 80px;
+  margin: 80px 0px 0px 0px;
   text-align: center;
 }
 /* FORMULARIO-REGISTER : REGISTER-IMG*/
@@ -78,16 +113,20 @@ label.register-text {
   color: #52759e;
   font-size: 16px;
   font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding-top: 12px;
 }
 
 /* FORMULARIO-REGISTER : REGISTER-FIELD */
 input.register-field {
   border: none;
   border-radius: 8px;
-  padding: 0px 10px 0px 10px;
-  background-color: #eaeaea;
+  width: 95%;
+  padding: 4px 15px 4px 15px;
+  margin: 0px 0px 10px 0px;
+  background-color: rgb(243, 243, 243);
 }
+
 
 /* FORMULARIO-REGISTER : REMEMBER-ME-BOX */
 input.remember-me-box {
@@ -98,16 +137,15 @@ label.remember-me-text {
   color: #5784ba;
 }
 
-
 /* HOME : COMPONENT - CONTAINER*/
-section.home-component{
+section.home-component {
   background-color: #f5f5f5;
   border-radius: 6px;
   position: relative;
   height: 200;
   width: 100;
   margin: 25px 0 10px 0;
-  padding:25px;
+  padding: 25px;
 }
 
 /* HOME : CONTAINER - 1 - chart.js - 1 */
@@ -117,7 +155,7 @@ section.home-chart-1 {
   position: relative;
   height: 200;
   width: 100;
-  padding:25px;
+  padding: 25px;
 }
 
 /* HOME : CONTAINER - 2 - chart.js - 2  */
@@ -127,8 +165,7 @@ section.home-chart-2 {
   position: relative;
   height: 200;
   width: 100;
-  padding:25px;
-
+  padding: 25px;
 }
 /* HOME : CONTAINER - 3 - chart.js - 3  */
 section.home-chart-3 {
@@ -136,11 +173,8 @@ section.home-chart-3 {
   border-radius: 6px;
   padding: 25px;
   position: relative;
-  padding:25px;
-
-
+  padding: 25px;
 }
-
 
 /******************************************/
 /******************************************/
@@ -151,8 +185,14 @@ section.home-chart-3 {
 /* BUTTON */
 .button {
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 6px 10% 6px 10%;
   background-color: #5784ba;
   color: white;
+}
+
+h4.ingresar-txt {
+  color: #52759e;
+  font-weight: 600;
+  font-size: 28px;
 }

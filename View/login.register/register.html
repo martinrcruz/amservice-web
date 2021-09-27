@@ -10,112 +10,163 @@
 
     <link rel="stylesheet" href="/./View/css/style.css" />
 
-    <title> Register - AMService web </title>
+    <title>Register - AMService web</title>
 </head>
 
-<body>
-    <!-- HEADER -->
+<body class="background-login-register">
+    <!-- HEADER
     <header class="container-fluid">
         <section class="row header-bar">
-            <h3>hamburguer</h3>
         </section>
 
-    </header>
+    </header> -->
+
 
     <!-- CUERPO -->
-    <section class="container">
+    <section class="container-fluid">
         <section class="row">
             <div class="col-3"></div>
 
             <div class="col-6">
                 <!--Contenedor de formulario de login-->
-                <section class="container">
 
-                    <form action="/./View/navigation/home.html" class="register-form">
+                <form action="/./View/navigation/home.html" class="register-form">
+                    <img class="login-img" src="/./View/resources/images/header-amservice-logo-nobackground.png" alt=""
+                        srcset="">
 
-                        <img class="register-img" src="/./View/resources/images/LOGO AM Square.jpg" alt=""> <br>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-6">
-                                    <label class="register-text" for="username">Nombre:</label>
-                                    <input class="register-field" type="text" id="name-register" name="name-register"
-                                        value="" />
-                                </div>
-                                <div class="col-6">
-                                    <label class="register-text" for="username">Apellido:</label>
-                                    <input class="register-field" type="text" id="lastname-register"
-                                        name="lastname-register" value="" />
-                                </div>
+                    <br><br>
 
-
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-6">
-
-                                    <label class="register-text" for="username">Email:</label>
-                                    <input class="register-field" type="text" id="email-register" name="email-register"
-                                        value="" />
-                                </div>
-                                <div class="col-6">
-
-                                    <label class="register-text" for="username">Repetir email:</label>
-                                    <input class="register-field" type="text" id="remail-register"
-                                        name="remail-register" value="" />
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-6">
-
-                                    <label class="register-text" for="username">Rut:</label>
-                                    <input class="register-field" type="text" id="rut-register" name="rut-register"
-                                        value="" />
-                                </div>
-                                <div class="col-6">
-
-                                    <label class="register-text" for="username">Fecha de nacimiento:</label>
-                                    <input class="register-field" type="date" id="datebirth-register"
-                                        name="datebirth-register" value="" />
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-6">
-
-                                    <label class="register-text" for="username">Contrasena:</label>
-                                    <input class="register-field" type="text" id="password-register"
-                                        name="password-register" value="" />
-                                </div>
-                                <div class="col-6">
-
-                                    <label class="register-text" for="username">Repetir contrasena:</label>
-                                    <input class="register-field" type="text" id="repassword-register"
-                                        name="repassword-register" value="" />
-                                </div>
-
-                            </div>
-                            <br>
-
-
-                            <input class="remember-me-box" type="checkbox" name="remember-me" id="remember-me"><label
-                                class="remember-me-text" for="password"> Acepto los terminos, condiciones y todo el
-                                show.</label>
-                            <br>
-                            <br>
-
-                            <input class="button" type="submit" value="Registrarme" />
+                    <section class="form-row">
+                        <div class="col">
+                            <label class="register-text" for="fname">Nombre:</label><br>
+                            <input class="register-field" type="text" id="fname-register" name="fname-register"
+                                value="" /><br>
                         </div>
-                        <!-- TO DO -->
-                        <!-- LINK DE DIRECCION AL FOMRULARIO DE REGISTRO -->
-                    </form>
+                        <div class="col">
+                            <label class="register-text" for="lname">Apellido:</label><br>
+                            <input class="register-field" type="text" id="lname-register" name="lname-register"
+                                value="" /><br>
+
+                        </div>
+                    </section>
+                    <hr style="width: 90%;">
+                    <section class="form-row">
+                        <div class="col-7">
+                            <label class="register-text" for="rut">Rut:</label><br>
+                            <input class="register-field" type="text" id="ingresar-rut" name="ingresar-rut"
+                                value="" /><br>
+                        </div>
+                        <div class="col">
+                            <label class="register-text" for="sexo">Sexo:</label><br>
+                            <select class="custom-select" id="inlineFormCustomSelectPref"
+                                style="background-color: rgb(243, 243, 243); border: none; padding: 4px 15px 4px 15px; height: 33px; border-radius: 8px;">
+                                <option selected>Elegir...</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                                <option value="O">Otro</option>
+                            </select>
+                        </div>
+
+                    </section>
+                    <hr style="width: 90%;">
+
+                    <section class="form-row">
+
+                        <div class="col">
+
+                            <label class="register-text" for="email" style="display: block; margin-bottom: 0px;">Correo
+                                electronico:</label>
+
+                            <input class="register-field" type="text" id="ingresar-email" name="ingresar-email"
+                                value="" /><br>
+                            <br>
+                        </div>
+                        <div class="col">
+                            <label class="register-text" for="email" style="display: block; margin-bottom: 0px;">Repetir
+                                Correo
+                                electronico:</label>
+                            <input class="register-field" type="text" id="reingresar-email" name="reingresar-email"
+                                value="" /><br>
+                            <br>
+                        </div>
+
+                    </section>
+                    <small id="emailHelper" class="text-muted">
+                        Tu correo electronico sera el nombre de usuario con el que accederas a tu cuenta.
+                    </small>
+                    <hr style="width: 90%;">
+                    <section class="form-row">
+                        <div class="col"> <label class="register-text" for="text">Fecha de nacimiento:</label><br>
+                            <input class="register-field" type="date" id="ingresar-fecha" name="ingresar-fecha" value=""
+                                style="text-align: center;" /><br>
+                        </div>
+                        <div class="col">
+                            <label class="register-text" for="text">Nacionalidad:</label><br>
+                            <select class="custom-select" id="inlineFormCustomSelectPref"
+                                style="background-color: rgb(243, 243, 243); border: none; padding: 4px 15px 4px 15px; height: 33px; border-radius: 8px;">
+                                <option selected>Elegir...</option>
+                                <option value="CL">Chileno</option>
+                                <option value="VN">Venezolano</option>
+                                <option value="OT">Otro</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="register-text" for="text">Direccion:</label><br>
+                            <input class="register-field" type="text" id="ingresar-direccion" name="ingresar-direccion"
+                                value="" /><br>
+                        </div>
+                    </section>
+
+                    <hr style="width: 90%;">
+
+                    <section class="form-row">
+                        <div class="col">
+                            <label class="register-text" for="password">Contraseña:</label><br>
+                            <input class="register-field" type="password" id="password-register"
+                                name="password-register" value="" /><br>
+                        </div>
+                        <div class="col">
+                            <label class="register-text" for="password">Repetir contraseña:</label><br>
+                            <input class="register-field" type="password" id="password-register"
+                                name="password-register" value="" /><br>
+                        </div>
+                    </section>
+                    <br>
+                    <br>
+                    <label class="remember-me-text" for="text" style="display: inline-block; width: 75%;">
+                        <input class="remember-me-box" type="checkbox" name="remember-me" id="remember-me"
+                            style="display: inline-block;"> Acepto los terminos y condiciones Lorem ipsum dolor, sit
+                        amet consectetur adipisicing elit. Facere numquam quas aut magnam, eaque voluptates esse?
+                        Incidunt, alias iure vero corporis dolore accusantium aut nobis accusamus, nemo atque voluptas
+                        ex!
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+
+                    <input class="button" type="submit" value="Ingresar" />
 
 
-                </section>
+
+                    <!-- TO DO -->
+                    <!-- LINK DE DIRECCION AL FOMRULARIO DE REGISTRO -->
+
+                    <br><br><br>
+                    <img class="powered-img" src="/./View/resources/images/powered-by.png" alt="" srcset="">
+                </form>
+
+<br><br><br>
             </div>
             <div class="col-3"></div>
         </section>
     </section>
+
+
+    <!-- FOOTER
+    <footer class="container-fluid">
+        <section class="row footer-bar">
+        </section>
+    </footer> -->
 
 </body>
 
