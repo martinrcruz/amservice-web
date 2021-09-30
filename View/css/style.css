@@ -144,8 +144,8 @@ section.home-component {
   position: relative;
   height: 200;
   width: 100;
-  margin: 25px 0 10px 0;
-  padding: 25px;
+  margin: 0px 0 10px 0;
+  padding: 0px 25px 25px 25px;
 }
 
 /* HOME : CONTAINER - 1 - chart.js - 1 */
@@ -176,6 +176,40 @@ section.home-chart-3 {
   padding: 25px;
 }
 
+
+/******************************************/
+/******************************************/
+/******************************************/
+/******************************************/
+
+/* MIS SERVICIOS : MANTENEDOR */
+form.servicios-form{
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+/* FORMULARIO-REGISTER : REGISTER-TEXT */
+label.servicios-text {
+  color: #52759e;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding-top: 15px;
+}
+
+/* FORMULARIO-REGISTER : REGISTER-FIELD */
+input.servicios-field {
+  border: none;
+  border-radius: 8px;
+  width: 95%;
+  padding: 6px 15px 4px 15px;
+  margin: 0px 0px 10px 0px;
+  background-color: #fff;
+}
+
+
 /******************************************/
 /******************************************/
 /******************************************/
@@ -190,9 +224,51 @@ section.home-chart-3 {
   background-color: #5784ba;
   color: white;
 }
+/*BOTONES DE MANTENEDORES*/
+/* BOTON : CREAR */
+.button-create {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 5% 6px 5%;
+  background-color: #4abb5f;
+  color: white;
+  margin: 0px 5px 0px 5px;
+}
+/* BOTON : CREAR */
+.button-update {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 5% 6px 5%;
+  background-color: #5784ba;
+  color: white;
+  margin: 0px 5px 0px 5px;
+
+}
+/* BOTON : CREAR */
+.button-delete {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 5% 6px 5%;
+  background-color: #ea2128;
+  color: white;
+  margin: 0px 5px 0px 5px;
+
+}
+/* BOTON : CREAR */
+.button-reset-form {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 5% 6px 5%;
+  margin-left: 7%;
+  background-color: #f5e323be;
+  color: white;
+}
 
 h4.ingresar-txt {
   color: #52759e;
   font-weight: 600;
   font-size: 28px;
 }
+
+
+

@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Home - AMService </title>
-    <link rel="stylesheet" href="/amservice-web/View/css/sidebar.css">
-    <link rel="stylesheet" href="/amservice-web/View/css/style.css">
+    <title> Mis servicios - AMService </title>
+    <link rel="stylesheet" href="/View/css/sidebar.css">
+    <link rel="stylesheet" href="/View/css/style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
@@ -134,7 +134,7 @@
         <br>
         <div class="row justify-content-center">
             <br>
-            <h2>Home</h2>
+            <h2>Mantenedor - Mis Servicios</h2>
             <br>
         </div>
         <br>
@@ -149,7 +149,119 @@
                         <div class="col">
 
                             <!-- Mantenedor -->
+                            <form action="/./View/navigation/home.html" class="servicios-form" method="">
+            
+                                <br>
+            
+                                <section class="form-row">
+                                    <div class="col-2">
+                                        <label class="servicios-text" for="fname">ID Operacion:</label><br>
+                                        <input class="servicios-field" type="text" id="fname-servicios" name="fname-servicios"
+                                            value="" /><br>
+                                    </div>
+                                    <div class="col">
+                                        <label class="servicios-text" for="lname">Titulo:</label><br>
+                                        <input class="servicios-field" type="text" id="lname-servicios" name="lname-servicios"
+                                            value="" /><br>
+            
+                                    </div>
+                                </section>
+                                <section class="form-row">
+                                    <div class="col">
+                                        <label class="servicios-text" for="sexo">Categoria:</label><br>
+                                        <select class="custom-select" id="inlineFormCustomSelectPref"
+                                            style="background-color: rgb(255, 255, 255); border: none; padding: 4px 10px 4px 10px; height: 33px; border-radius: 8px; margin-left: 10px;">
+                                            <option selected>Elegir...</option>
+                                            <option value="diagnostico">Diagnostico</option>
+                                            <option value="mantencion">Mantencion</option>
+                                            <option value="reparacion">Reparacion</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <label class="servicios-text" for="rut">Descripcion corta:</label><br>
+                                        <input class="servicios-field" type="text" id="ingresar-rut" name="ingresar-rut"
+                                            value="" /><br>
+                                    </div>
+                                    <!-- <div class="col">
+                                        <label class="servicios-text" for="sexo">Sexo:</label><br>
+                                        <select class="custom-select" id="inlineFormCustomSelectPref"
+                                            style="background-color: rgb(243, 243, 243); border: none; padding: 4px 15px 4px 15px; height: 33px; border-radius: 8px;">
+                                            <option selected>Elegir...</option>
+                                            <option value="M">Masculino</option>
+                                            <option value="F">Femenino</option>
+                                            <option value="O">Otro</option>
+                                        </select>
+                                    </div> -->
+            
+                                </section>
+            
+                                <section class="form-row">
+            
+                                    <div class="col-6">
+            
+                                        <label class="servicios-text" for="text"> Observaciones: </label><br>
+                                        <input class="servicios-field" type="text" id="ingresar-fecha" name="ingresar-fecha" value=""
+                                            style="text-align: center;" /><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <label class="servicios-text" for="text">Fecha de ingreso:</label><br>
+                                        <input class="servicios-field" type="date" id="ingresar-fecha" name="ingresar-fecha" value=""
+                                            style="text-align: center;" /><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <label class="servicios-text" for="text">Fecha entrega (est.):</label><br>
+                                        <input class="servicios-field" type="date" id="ingresar-fecha" name="ingresar-fecha" value=""
+                                            style="text-align: center;" /><br>
+                                    </div>
+            
+                                </section>
 
+                                <section class="form-row">
+                                    <div class="col-5"> 
+                                        <label class="servicios-text" for="text">Nombre cliente:</label><br>
+                                        <input class="servicios-field" type="text" id="ingresar-fecha" name="ingresar-fecha" value=""
+                                            style="text-align: center;" /><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <label class="servicios-text" for="text">Rut:</label><br>
+                                        <input class="servicios-field" type="text" id="ingresar-fecha" name="ingresar-fecha" value=""
+                                            style="text-align: center;" /><br>
+                                    </div>
+                                    <div class="col-4">
+                                        <label class="servicios-text" for="text">Direccion:</label><br>
+                                        <input class="servicios-field" type="text" id="ingresar-direccion" name="ingresar-direccion"
+                                            value="" />
+                                            <br>
+                                    </div>
+                                </section>
+
+
+                                
+                                <section class="form-row">
+                                    <div class="col"> 
+                                        <label class="servicios-text" for="text">Observaciones:</label><br>
+                                        <input class="servicios-field" type="text" id="ingresar-fecha" name="ingresar-fecha" value=""
+                                            style="text-align: center;" /><br>
+                                    </div>
+                                </section>
+            
+            
+                                <br>
+                                <br>
+
+            
+                                <input class="button-create" type="submit" value="Ingresar" /> 
+                                <input class="button-update" type="submit" value="Actualizar" />
+                                <input class="button-delete" type="submit" value="Eliminar" />
+                                <input class="button-reset-form" type="submit" value="Limpiar" />
+            
+            
+            
+                                <!-- TO DO -->
+                                <!-- LINK DE DIRECCION AL FOMRULARIO DE REGISTRO -->
+            
+                            </form>
 
                             
                         </div>
@@ -160,13 +272,24 @@
                     <section class="row">
                         <div class="col-12">
                             <section class="home-component">
+                            </section>
+                        </div>
+                    </section>
+                </div>
+
+
+                <!-- SECCION DERECHA-->
+                <div class="col-4">
+                    <section class="row">
+                        <div class="col-12">
+                            <section class="home-component">
                                 <br>
-                                <h5>Actividades recientes: </h5><br>
+                                <h5>Historia de servicios: </h5><br>
                                 <table class="table table-striped">
                                     <thead>
                                       <tr>
                                         <th scope="col">ID</th>
-                                        <th scope="col">Actividad</th>
+                                        <th scope="col">Categoria</th>
                                         <th scope="col">Descripcion</th>
                                         <th scope="col">Fecha</th>
                                       </tr>
@@ -194,17 +317,6 @@
                                   </table>
                             </section>
                         </div>
-                    </section>
-                </div>
-
-
-                <!-- SECCION DERECHA-->
-                <div class="col-4">
-                    <section class="home-chart-3">
-                        <canvas id="chart3" width="200" height="100"></canvas>
-                    </section>
-                    <section class="home-component">
-                           
                     </section>
 
                 </div>
@@ -247,9 +359,9 @@
     </section>
 
 
-    <script src="/./View/js/charts.js"></script>
-    <script src="/./View/js/sidebar.js"></script>
-    <script src="/./View/js/to-do-list.js"></script>
+    <script src="/View/js/charts.js"></script>
+    <script src="/View/js/sidebar.js"></script>
+    <script src="/View/js/to-do-list.js"></script>
 </body>
 
 </html>
